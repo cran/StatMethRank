@@ -8,6 +8,7 @@
 #'   \item 2, Give people more say in Government decisions
 #'   \item 3, Fight rising prices
 #'   \item 4, Protect freedom of speech
+#'   each column is a rank of the four items and the frequency of the rank
 #' }
 #'
 #' @docType data

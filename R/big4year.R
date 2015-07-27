@@ -12,13 +12,13 @@
 #' through the use of modeling we may try to determine how the rankings cluster.
 #' 
 #' \itemize{
-#'   \item Arsenal, Chelsea, Liverpool, and Manchester United. The ranks of the "Big Four" clubs
+#'   \item The ranks of the "Big Four"(Arsenal, Chelsea, Liverpool, and Manchester United) clubs
 #'   
 #' }
 #' 
 #' @docType data
 #' @keywords datasets
-#' @format A data frame with 21 rows and 4 variables
+#' @format A data frame with 21 rows and 4 columns
 #' @name big4year
 NULL
 

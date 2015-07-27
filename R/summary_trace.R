@@ -1,5 +1,5 @@
 # Create a output list by beta_trace and Sigma_trace
-summary.trace <- function(beta_trace, Sigma_trace, item_name = NULL)
+summary_trace <- function(beta_trace, Sigma_trace, item_name = NULL)
 {
     # Input  beta_trace(nTrace * p), Sigma_trace(nTrace * (k-1)^2), X((nTrace*(k-1)) * p)
     # Return beta_trace, Sigma_trace, rs_trace, V_trace, rv_trace

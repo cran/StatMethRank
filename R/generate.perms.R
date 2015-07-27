@@ -1,8 +1,8 @@
 #' Generate all possible permutations of k elements out of n 
 #'
 #' This function generates all permutations of n elements taken k at a time.
-#' An efficient way to generate n! permutations of vec 
-#' in a Lexicographic order without recursive algorithm 
+#' The most efficient way to generate n! permutations of vec 
+#' in a Lexicographic order without recursive algorithm in R.
 #'
 #' @param n number of the whole elements
 #' @param k number of elements to permute (default the same as n)
@@ -23,7 +23,7 @@ generate.perms <- function (n, k = n, vec = 1:n)
 	# Created   : Oct 29, 2013
 	if (k > n)
 	{
-		stop("k should be smaller than n!")
+		stop("k should be smaller than or equal to n!")
 	}
 	if (length(vec) != n)
 	{
@@ -57,8 +57,8 @@ generate.perms <- function (n, k = n, vec = 1:n)
 			ans = matrix(vec[ans], ncol = n)
 			return(ans)
 		}
-		mat = combn(vec, k)
-		ans = t(apply(mat, 2, permns, n = k))
+		mat = t(as.matrix(combn(vec, k)))
+	    ans = apply(mat, 1, permns, n = k)
 		ans = matrix(ans, ncol = k)
 		return(ans)
 	} else return(as.matrix(vec, nrow = 1))

@@ -8,7 +8,10 @@
 #' @param dset.agg whether the data set is in the aggregated form
 #'                 (default as FALSE)
 #' @param dtype type of the weighted distance measure 
-#'              (default as weighted Kendall's)
+#' Kendall or K(default) : "Weighted Kendall's tau", SqrtSpearman 
+#' or SS : "Square root of weighted Spearman", Spearman or S : 
+#' "Weighted Spearman", Footrule or F : "Weighted Spearman's 
+#' footrule" 
 #' @param noise whether a noise cluster is contained (default as FALSE)
 #' @param iter number of iterations of the EM algorithm (default as 100)
 #' @return a list of the fitting result, containing the following objects:

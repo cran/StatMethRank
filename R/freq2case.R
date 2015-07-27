@@ -18,8 +18,7 @@
 #' data(APA)
 #' cases = freq2case(APA, freq.col = 1)
 #' freqs = case2freq(cases)
-#' @references Posted on R-Help, Jan 20, 2009. http://tolstoy.newcastle.edu.au/R/e6/help/09/01/1873.
-#' html
+#' @references Posted on R-Help, Jan 20, 2009.
 
 
 freq2case <- function (x, var.names = NULL, freq.name = "Freq", freq.col = NULL, ...) 

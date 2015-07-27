@@ -11,7 +11,9 @@
 #' @param dset2.agg whether the data set is in the aggregated form
 #'                  (default as FALSE)
 #' @param dtype type of the weighted distance measure 
-#'              (default as weighted Kendall's)
+#' Kendall or K(default) : "Weighted Kendall's tau", SqrtSpearman 
+#' or SS : "Square root of weighted Spearman", Spearman or S : 
+#' "Weighted Spearman"
 #' @param weight weight vector (default as all components being 1)
 #' @param modal the modal ranking 
 #'              (default as c(1:k), k being the number of ranked items)

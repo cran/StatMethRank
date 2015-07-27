@@ -1,6 +1,6 @@
 #' Multivariate Normal Order-statistics Model.
 #'
-#' Using MCMC methods to fit the MVNOS model. Please install JAGS 3.X (\url{http://mcmc-jags.sourceforge.net}) and rjags (\url{http://cran.r-project.org/web/packages/rjags/index.html}) at first.
+#' Using MCMC methods to fit the MVNOS model. Please install JAGS 3.X (\url{http://mcmc-jags.sourceforge.net}) and rjags (\url{https://cran.r-project.org/package=rjags}) at first.
 #'
 #' @param y 	:an n*k matrix, observed data, each row is an individual's rank of items
 #' @param p 	:number of parameters in MVNOS model
@@ -175,9 +175,9 @@ mvnos.model <- function(y, p, Z, beta0 = NULL, A0 = NULL, alpha = NULL, P = NULL
 			Sigma <- inverse(G)
 		}"
 	}
-	jags <- jags.model(textConnection(strModelCode), data, init)
+	jags <- rjags::jags.model(textConnection(strModelCode), data, init)
 	update(jags, BURN_IN_ITERATIONS)
-	samp <- coda.samples(jags, c("beta", "Sigma"), MAX_ITERATIONS)
+	samp <- rjags::coda.samples(jags, c("beta", "Sigma"), MAX_ITERATIONS)
 	# End of running JAGS
 	#################################################################
 
@@ -192,6 +192,6 @@ mvnos.model <- function(y, p, Z, beta0 = NULL, A0 = NULL, alpha = NULL, P = NULL
 	beta_trace = as.matrix(beta_trace / sqrt(Sigma11))
 	Sigma_trace = Sigma_trace / Sigma11
 	# Create an output list
-	output_list = summary.trace(beta_trace, Sigma_trace,  item_name = item_name)
+	output_list = summary_trace(beta_trace, Sigma_trace,  item_name = item_name)
 	return(output_list)
 }

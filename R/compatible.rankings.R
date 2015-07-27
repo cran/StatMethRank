@@ -3,7 +3,7 @@
 #' This function generates the set of complete permutations compatible
 #' with the input_ranking.
 #'
-#' @param input_ranking a vector, using NA to stand for the missing ranks
+#' @param input_ranking a vector, using NAs to stand for the missing ranks
 #' @return a matrix or a vector, each column is a complete ranking.
 #' @export
 #' @author Li Qinglong <liqinglong0830@@163.com>

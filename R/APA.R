@@ -13,7 +13,7 @@
 #' 
 #' @docType data
 #' @keywords datasets
-#' @format A data frame with 120 rows and 6 variables
+#' @format A data frame with 120 rows and 6 columns
 #' @name APA
 NULL
 

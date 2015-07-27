@@ -5,7 +5,7 @@
 #'
 #' @param complete_ranking a matrix or a vector, each column is a complete ranking.
 #' @param candidate_ranking a vector, using NA to stand for the missing ranks.
-#' @return a vector of TUREs and FALSEs 
+#' @return a vector of TRUEs and FALSEs 
 #' @export
 #' @author Li Qinglong <liqinglong0830@@163.com>
 #' @examples

@@ -150,7 +150,7 @@ interaction.test <- function(X)
     # Test statistic, degree of freedom = (I-1)(J-1)
     W = t(tempvec) %*% ginv(Sigma) %*% tempvec / N
 	# Under null hypothesis
-    p_value = pchisq(W, df = (II - 1) * (JJ - 1))    
+    p_value = 1 - pchisq(W, df = (II - 1) * (JJ - 1))    
     output = list(Statistic = W, p_value = p_value)
 	return(output)
 }

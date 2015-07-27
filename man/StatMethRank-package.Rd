@@ -29,5 +29,5 @@ Statistical Methods for Ranking Data, Alvo and Yu (2014), (\url{http://web.hku.h
 
 \keyword{ ranking }
 \seealso{
-pmr   (\url{http://cran.r-project.org/web/packages/pmr/index.html})
+pmr   (\url{https://cran.r-project.org/package=pmr})
 }
