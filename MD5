@@ -1,4 +1,4 @@
-5da64022f3b875da40850777dd056f8b *DESCRIPTION
+713e29d59e1c7599a53dfd35de9b08d0 *DESCRIPTION
 988b2fb6f527d6f7d4c905f5130b64e2 *NAMESPACE
 02da08494c1eaa055ce2414f755ea315 *R/APA.R
 67ed94593ea7d76decb93e40cefef837 *R/Croon.R
@@ -79,7 +79,7 @@ f6e803e0bfd9eb4434eae4b4021db6bd *man/repmat.Rd
 64bd96096033c923dc887a6b1e3fb8c0 *src/data.h
 c9f87b4940a64bb5b1ec12e5e27f1716 *src/decTreeImpFuncCpp.cpp
 9b1695b3fc3bed2837b47d7fa70b863d *src/input.h
-0244c8a812c38a1ba1ba6c88c4a06959 *src/myrand.h
+1acaea35403a8a63ed94e0e4b5302691 *src/myrand.h
 2c9554b0d958cc8033a7696303086baa *src/question.cpp
 56fcdb0487279c13b7dab3bf905acc6e *src/question.h
-c692e93428b273bc695fcd2cde36b2cd *src/utility.h
+4c29b7141615487d16c3e92438e88477 *src/utility.h
